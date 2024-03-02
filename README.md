@@ -2,17 +2,21 @@
 
 Devcontainer for working with Puppet
 
-Based on Ubuntu "Jammy" since most devcontainer features use this
+Based on Ubuntu "Jammy" since most devcontainer features use this as a base. 
 
-## Features
+Other features should be able to be added in the normal way for devcontainers.
 
-Puppet
+## Local Features
+
+puppet-bolt
 
 - PDK
 - Puppet Bolt
 - Puppet Agent (Not Configured)
 - Onceover
 
-PowerShell
+oh-my-posh
+
 - PowerShell 7 Current
 - Oh-My-Posh
+
