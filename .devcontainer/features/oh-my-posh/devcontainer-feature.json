@@ -1,0 +1,27 @@
+{
+  
+    "name": "oh-my-posh",
+    "description": "oh-my-posh",
+    "version": "0.1.0",
+    "options": {
+        "defaultTemplate": {
+            "type": "string",
+            "default": "jandedobbeleer",
+            "description": "The default oh-my-posh theme to use"
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false
+        },
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "version": "7.4.1",
+            "modules": "posh-git,Terminal-Icons"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/powershell"
+    ]
+}

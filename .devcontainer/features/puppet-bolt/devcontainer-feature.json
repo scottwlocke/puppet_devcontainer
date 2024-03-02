@@ -1,0 +1,20 @@
+{
+  
+    "name": "puppet-bolt",
+    "description": "puppet bolt",
+    "version": "0.1.0",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false
+        },
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "version": "7.4.1",
+            "modules": "posh-git,Terminal-Icons"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/powershell"
+    ]
+}
