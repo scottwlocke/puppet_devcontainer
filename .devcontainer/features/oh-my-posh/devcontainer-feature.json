@@ -1,4 +1,5 @@
 {
+    // this file goes to .devcontainer/features/oh-my-posh/
   
     "name": "oh-my-posh",
     "description": "oh-my-posh",
@@ -18,7 +19,7 @@
         },
         "ghcr.io/devcontainers/features/powershell:1": {
             "version": "7.4.1",
-            "modules": "posh-git,Terminal-Icons"
+            "modules": "Terminal-Icons"
         }
     },
     "installsAfter": [

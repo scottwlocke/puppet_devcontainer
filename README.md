@@ -1,3 +1,8 @@
+
+# Devcontainer
+## Warning:
+Make sure install.sh is in the LF (Linux) format for Line Endings, if not you will get a failure of file not found for install.sh since bash will not be able to read the format due to CRLF (Windows Format)
+
 # puppet_devcontainer
 
 Devcontainer for working with Puppet

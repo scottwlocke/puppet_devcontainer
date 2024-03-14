@@ -1,6 +1,6 @@
 # this file goes to .devcontainer/features/oh-my-posh/
 
-Import-Module posh-git
+
 Import-Module Terminal-Icons
 
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete

@@ -1,10 +1,11 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-	"features": {
+    // this file goes to .devcontainer/
+  
+    "name": "your devcontainer",
+    
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+
+    "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": false,
             "installOhMyZsh": false,
@@ -12,57 +13,28 @@
         },
         "ghcr.io/devcontainers/features/powershell:1": {
             "version": "7.4.1",
-            "modules": "posh-git,Terminal-Icons"
+            "modules": "Terminal-Icons"
         },
         "./features/oh-my-posh": {
             // optional: select one of the templates
             "defaultTemplate": "powerlevel10k_rainbow"
         },
-		"./features/puppet-bolt": {
-            // optional: select one of the templates
-            // "defaultTemplate": "powerlevel10k_rainbow"
+        "./features/puppet-bolt": {
+            // optional:
+
         }
-	},
-	"customizations": {
-		"vscode": {
-			"settings": {
+    },
+
+    "customizations": {
+        "vscode": {
+            "settings": {
                 // optional: make pwsh the default shell in VS code terminal
-                "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh",
-				"terminal.integrated.defaultProfile.linux": "pwsh"
+                "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh"
             },
-			"extensions": [
-				"puppet.puppet-vscode",
-				"redhat.vscode-yaml",
-				"waderyan.gitblame",
-				"MS-CST-E.vscode-devskim",
-				"mhutchie.git-graph",
-				"donjayamanne.githistory",
-				"DavidAnson.vscode-markdownlint",
-				"Shopify.ruby-lsp",
-				"ms-vscode.powershell"
-			]
-		}
-	},
-	"containerEnv": {
-		"PDK_DISABLE_ANALYTICS": "true",
-		"LANG": "C.UTF-8"
-		// "PATH": "${PATH}:/opt/puppetlabs/pdk/private/git/bin"
-	}
-	// "runArgs": ["--env-file",".devcontainer/devcontainer.env"]
-	//"postStartCommand": "pwsh"
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",ge
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
-}
+            "extensions": [
+                // optional
+                "ms-vscode.powershell"
+            ]
+        }
+    }
+}    

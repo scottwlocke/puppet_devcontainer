@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # this file goes to .devcontainer/features/oh-my-posh/
 
 # makre sure we have fzf installed
@@ -20,5 +20,6 @@ POSH_THEME="${_REMOTE_USER_HOME}/.cache/oh-my-posh/themes/${DEFAULTTEMPLATE}.omp
 mkdir -p "${_REMOTE_USER_HOME}/.config/powershell"
 awk "{gsub(/%POSHTHEMEFILE%/, \"${POSH_THEME}\")}1" < Microsoft.PowerShell_profile.ps1 > "${_REMOTE_USER_HOME}/.config/powershell/Microsoft.PowerShell_profile.ps1"
 awk "{gsub(/%POSHTHEMEFILE%/, \"${POSH_THEME}\")}1" < Microsoft.VSCode_profile.ps1 > "${_REMOTE_USER_HOME}/.config/powershell/Microsoft.VSCode_profile.ps1"
+
 # make the .config folder and all files accessible (again)
 chmod 777 -R "${_REMOTE_USER_HOME}/.config"
