@@ -12,7 +12,7 @@
             "installOhMyZshConfig": false
         },
         "ghcr.io/devcontainers/features/powershell:1": {
-            "version": "7.4.1",
+            "version": "7.4.2",
             "modules": "Terminal-Icons"
         },
         "./features/oh-my-posh": {
@@ -32,8 +32,8 @@
                 "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh"
             },
             "extensions": [
-                // optional
-                "ms-vscode.powershell"
+                "ms-vscode.powershell",
+                "puppet.puppet-vscode"
             ]
         }
     }
