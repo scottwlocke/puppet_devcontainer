@@ -29,11 +29,21 @@
         "vscode": {
             "settings": {
                 // optional: make pwsh the default shell in VS code terminal
-                "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh"
+                "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh",
+                "terminal.integrated.defaultProfile.linux": "pwsh",
+                "terminal.integrated.profiles.linux": { "pwsh": { "path": "/opt/microsoft/powershell/7/pwsh" } }
             },
             "extensions": [
                 "ms-vscode.powershell",
-                "puppet.puppet-vscode"
+                "puppet.puppet-vscode",
+                "redhat.vscode-yaml",
+                "ms-azuretools.vscode-azurefunctions",
+                "ms-vscode.azure-account",
+                "ms-azuretools.vscode-azureresourcegroups",
+                "aaron-bond.better-comments",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "waderyan.gitblame"
             ]
         }
     }
