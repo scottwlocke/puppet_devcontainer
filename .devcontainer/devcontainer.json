@@ -45,10 +45,11 @@
                 "ms-azuretools.vscode-azurefunctions",
                 "ms-vscode.azure-account",
                 "ms-azuretools.vscode-azureresourcegroups",
-                "aaron-bond.better-comments",
                 "mhutchie.git-graph",
                 "donjayamanne.githistory",
-                "waderyan.gitblame"
+                "waderyan.gitblame",
+                "ms-azuretools.vscode-bicep",
+                "DavidAnson.vscode-markdownlint"
             ]
         }
     },
