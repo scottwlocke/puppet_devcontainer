@@ -1,4 +1,4 @@
-#!/bin/bash
+re#!/bin/bash
 set -e
 # this file goes to .devcontainer/features/oh-my-posh/
 
