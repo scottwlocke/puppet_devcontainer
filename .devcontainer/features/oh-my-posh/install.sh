@@ -23,3 +23,6 @@ awk "{gsub(/%POSHTHEMEFILE%/, \"${POSH_THEME}\")}1" < Microsoft.VSCode_profile.p
 
 # make the .config folder and all files accessible (again)
 chmod 777 -R "${_REMOTE_USER_HOME}/.config"
+
+# Disable Upgrade Banner
+oh-my-posh disable notice
