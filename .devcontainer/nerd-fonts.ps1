@@ -72,7 +72,7 @@ New-Item -Path $env:USERPROFILE\fontstemp\ -ItemType Directory -Force
 Set-Location -Path $env:USERPROFILE\fontstemp\
 
  
-# Disable progress bars for iwr downloads
+# Disable progress bars for Invoke-WebRequest downloads
 #    $ProgressPreference = 'SilentlyContinue' 
 
 # Download Compresed Fonts
@@ -91,171 +91,171 @@ Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download
 write-host "Successfully Downloaded Compressed Font: Anonymous Pro"
     
 write-host "Downloading Compressed Font: Arimo"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Arimo.zip -Outfile "$($env:USERPROFILE)\fontstemp\Arimo.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Arimo.zip -Outfile "$($env:USERPROFILE)\fontstemp\Arimo.zip"
 write-host "Successfully Downloaded Compressed Font: Arimo"
     
 write-host "Downloading Compressed Font: Aurulent Sans Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/AurulentSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\AurulentSansMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/AurulentSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\AurulentSansMono.zip"
 write-host "Successfully Downloaded Compressed Font: Aurulent Sans Mono"
     
 write-host "Downloading Compressed Font: Big Blue Terminal"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/BigBlueTerminal.zip -Outfile "$($env:USERPROFILE)\fontstemp\BigBlueTerminal.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/BigBlueTerminal.zip -Outfile "$($env:USERPROFILE)\fontstemp\BigBlueTerminal.zip"
 write-host "Successfully Downloaded Compressed Font: Big Blue Terminal"
     
 write-host "Downloading Compressed Font: Bitstream Vera Sans Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/BitstreamVeraSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\BitstreamVeraSansMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/BitstreamVeraSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\BitstreamVeraSansMono.zip"
 write-host "Successfully Downloaded Compressed Font: Bitstream Vera Sans Mono"
     
 write-host "Downloading Compressed Font: Cascadia Code"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CascadiaCode.zip -Outfile "$($env:USERPROFILE)\fontstemp\CascadiaCode.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CascadiaCode.zip -Outfile "$($env:USERPROFILE)\fontstemp\CascadiaCode.zip"
 write-host "Successfully Downloaded Compressed Font: Cascadia Code"
     
 write-host "Downloading Compressed Font: IBM Plex Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/IBMPlexMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\IBMPlexMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/IBMPlexMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\IBMPlexMono.zip"
 write-host "Successfully Downloaded Compressed Font: IBM Plex Mono"
     
 write-host "Downloading Compressed Font: Code New Roman"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CodeNewRoman.zip -Outfile "$($env:USERPROFILE)\fontstemp\CodeNewRoman.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CodeNewRoman.zip -Outfile "$($env:USERPROFILE)\fontstemp\CodeNewRoman.zip"
 write-host "Successfully Downloaded Compressed Font: Code New Roman"
     
 write-host "Downloading Compressed Font: Comic Shanns Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ComicShannsMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\ComicShannsMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ComicShannsMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\ComicShannsMono.zip"
 write-host "Successfully Downloaded Compressed Font: Comic Shanns Mono"
     
 write-host "Downloading Compressed Font: Cousine"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Cousine.zip -Outfile "$($env:USERPROFILE)\fontstemp\Cousine.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Cousine.zip -Outfile "$($env:USERPROFILE)\fontstemp\Cousine.zip"
 write-host "Successfully Downloaded Compressed Font: Cousine"
     
 write-host "Downloading Compressed Font: Daddy Time Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DaddyTimeMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DaddyTimeMono.zip" 
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DaddyTimeMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DaddyTimeMono.zip" 
 write-host "Successfully Downloaded Compressed Font: Daddy Time Mono"
     
 write-host "Downloading Compressed Font: DejaVu Sans Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DejaVuSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DejaVuSansMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DejaVuSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DejaVuSansMono.zip"
 write-host "Successfully Downloaded Compressed Font: DejaVu Sans Mono"
     
 write-host "Downloading Compressed Font: Droid Sans Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DroidSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DroidSansMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DroidSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\DroidSansMono.zip"
 write-host "Successfully Downloaded Compressed Font: Droid Sans Mono"
     
 write-host "Downloading Compressed Font: Fantasque Sans Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FantasqueSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\FantasqueSansMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FantasqueSansMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\FantasqueSansMono.zip"
 write-host "Successfully Downloaded Compressed Font: Fantasque Sans Mono"
     
 write-host "Downloading Compressed Font: Fira Code"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraCode.zip -Outfile "$($env:USERPROFILE)\fontstemp\FiraCode.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraCode.zip -Outfile "$($env:USERPROFILE)\fontstemp\FiraCode.zip"
 write-host "Successfully Downloaded Compressed Font: Fira Code"
     
 write-host "Downloading Compressed Font:Fira Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\FiraMono.zip" 
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\FiraMono.zip" 
 write-host "Successfully Downloaded Compressed Font: Fira Mono"
    
 write-host "Downloading Compressed Font: Go Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Go-Mono.zip -Outfile "$($env:USERPROFILE)\fontstemp\Go-Mono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Go-Mono.zip -Outfile "$($env:USERPROFILE)\fontstemp\Go-Mono.zip"
 write-host "Successfully Downloaded Compressed Font: Go Mono"
     
 write-host "Downloading Compressed Font: Gohu"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Gohu.zip -Outfile "$($env:USERPROFILE)\fontstemp\Gohu.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Gohu.zip -Outfile "$($env:USERPROFILE)\fontstemp\Gohu.zip"
 write-host "Successfully Downloaded Compressed Font: Gohu"
     
 write-host "Downloading Compressed Font: Hack"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hack.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hack.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hack.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hack.zip"
 write-host "Successfully Downloaded Compressed Font: Hack"
     
 write-host "Downloading Compressed Font: Hasklig"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hasklig.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hasklig.zip" 
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hasklig.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hasklig.zip" 
 write-host "Successfully Downloaded Compressed Font: Hasklig"
     
 write-host "Downloading Compressed Font: Heavy Data"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/HeavyData.zip -Outfile "$($env:USERPROFILE)\fontstemp\HeavyData.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/HeavyData.zip -Outfile "$($env:USERPROFILE)\fontstemp\HeavyData.zip"
 write-host "Successfully Downloaded Compressed Font: Heavy Data"
     
 write-host "Downloading Compressed Font: Hermit"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hermit.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hermit.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hermit.zip -Outfile "$($env:USERPROFILE)\fontstemp\Hermit.zip"
 write-host "Successfully Downloaded Compressed Font: Hermit"
     
 write-host "Downloading Compressed Font: Inconsolata"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Inconsolata.zip -Outfile "$($env:USERPROFILE)\fontstemp\Inconsolata.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Inconsolata.zip -Outfile "$($env:USERPROFILE)\fontstemp\Inconsolata.zip"
 write-host "Successfully Downloaded Compressed Font: Inconsolata"
     
 write-host "Downloading Compressed Font: iA-Writer"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/iA-Writer.zip -Outfile "$($env:USERPROFILE)\fontstemp\iA-Writer.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/iA-Writer.zip -Outfile "$($env:USERPROFILE)\fontstemp\iA-Writer.zip"
 write-host "Successfully Downloaded Compressed Font: iA-Writer"
     
 write-host "Downloading Compressed Font: Inconsolata Go"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/InconsolataGo.zip -Outfile "$($env:USERPROFILE)\fontstemp\InconsolataGo.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/InconsolataGo.zip -Outfile "$($env:USERPROFILE)\fontstemp\InconsolataGo.zip"
 write-host "Successfully Downloaded Compressed Font: Inconsolata Go"
     
 write-host "Downloading Compressed Font: Inconsolata LGC"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/InconsolataLGC.zip -Outfile "$($env:USERPROFILE)\fontstemp\InconsolataLGC.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/InconsolataLGC.zip -Outfile "$($env:USERPROFILE)\fontstemp\InconsolataLGC.zip"
 write-host "Successfully Downloaded Compressed Font: Inconsolata LGC"
     
 write-host "Downloading Compressed Font: Iosevka"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Iosevka.zip -Outfile "$($env:USERPROFILE)\fontstemp\Iosevka.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Iosevka.zip -Outfile "$($env:USERPROFILE)\fontstemp\Iosevka.zip"
 write-host "Successfully Downloaded Compressed Font: Iosevka"
     
 write-host "Downloading Compressed Font: Iosevka Terminal"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/IosevkaTerm.zip -Outfile "$($env:USERPROFILE)\fontstemp\IosevkaTerm.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/IosevkaTerm.zip -Outfile "$($env:USERPROFILE)\fontstemp\IosevkaTerm.zip"
 write-host "Successfully Downloaded Compressed Font: Iosevka Terminal"
     
 write-host "Downloading Compressed Font: JetBrains Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/JetBrainsMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\JetBrainsMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/JetBrainsMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\JetBrainsMono.zip"
 write-host "Successfully Downloaded Compressed Font: JetBrains Mono"
     
 write-host "Downloading Compressed Font: Lekton"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Lekton.zip -Outfile "$($env:USERPROFILE)\fontstemp\Lekton.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Lekton.zip -Outfile "$($env:USERPROFILE)\fontstemp\Lekton.zip"
 write-host "Successfully Downloaded Compressed Font: Lekton"
     
 write-host "Downloading Compressed Font: Liberation Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/LiberationMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\LiberationMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/LiberationMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\LiberationMono.zip"
 write-host "Successfully Downloaded Compressed Font: Liberation Mono"
     
 write-host "Downloading Compressed Font: Lilex"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Lilex.zip -Outfile "$($env:USERPROFILE)\fontstemp\Lilex.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Lilex.zip -Outfile "$($env:USERPROFILE)\fontstemp\Lilex.zip"
 write-host "Successfully Downloaded Compressed Font: Lilex"
     
 write-host "Downloading Compressed Font: Meslo"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Meslo.zip -Outfile "$($env:USERPROFILE)\fontstemp\Meslo.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Meslo.zip -Outfile "$($env:USERPROFILE)\fontstemp\Meslo.zip"
 write-host "Successfully Downloaded Compressed Font: Meslo"
     
 write-host "Downloading Compressed Font: Monofur"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Monofur.zip -Outfile "$($env:USERPROFILE)\fontstemp\Monofur.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Monofur.zip -Outfile "$($env:USERPROFILE)\fontstemp\Monofur.zip"
 write-host "Successfully Downloaded Compressed Font: Monofur"
     
 write-host "Downloading Compressed Font: Monoid"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Monoid.zip -Outfile "$($env:USERPROFILE)\fontstemp\Monoid.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Monoid.zip -Outfile "$($env:USERPROFILE)\fontstemp\Monoid.zip"
 write-host "Successfully Downloaded Compressed Font: Monoid"
     
 write-host "Downloading Compressed Font: Mononoki"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Mononoki.zip -Outfile "$($env:USERPROFILE)\fontstemp\Mononoki.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Mononoki.zip -Outfile "$($env:USERPROFILE)\fontstemp\Mononoki.zip"
 write-host "Successfully Downloaded Compressed Font: Mononoki"
     
 write-host "Downloading Compressed Font: MPlus"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/MPlus.zip -Outfile "$($env:USERPROFILE)\fontstemp\MPlus.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/MPlus.zip -Outfile "$($env:USERPROFILE)\fontstemp\MPlus.zip"
 write-host "Successfully Downloaded Compressed Font: MPlus"
     
 write-host "Downloading Compressed Font: Noto"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Noto.zip -Outfile "$($env:USERPROFILE)\fontstemp\Noto.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Noto.zip -Outfile "$($env:USERPROFILE)\fontstemp\Noto.zip"
 write-host "Successfully Downloaded Compressed Font: Noto"
     
 write-host "Downloading Compressed Font: Open Dyslexic"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/OpenDyslexic.zip -Outfile "$($env:USERPROFILE)\fontstemp\OpenDyslexic.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/OpenDyslexic.zip -Outfile "$($env:USERPROFILE)\fontstemp\OpenDyslexic.zip"
 write-host "Successfully Downloaded Compressed Font: Open Dyslexic"
     
 write-host "Downloading Compressed Font: Overpass"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Overpass.zip -Outfile "$($env:USERPROFILE)\fontstemp\Overpass.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Overpass.zip -Outfile "$($env:USERPROFILE)\fontstemp\Overpass.zip"
 write-host "Successfully Downloaded Compressed Font: Overpass"
     
 write-host "Downloading Compressed Font: Pro Font"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ProFont.zip -Outfile "$($env:USERPROFILE)\fontstemp\ProFont.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ProFont.zip -Outfile "$($env:USERPROFILE)\fontstemp\ProFont.zip"
 write-host "Successfully Downloaded Compressed Font: Pro Font"
     
 write-host "Downloading Compressed Font: Proggy Clean"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ProggyClean.zip -Outfile "$($env:USERPROFILE)\fontstemp\ProggyClean.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ProggyClean.zip -Outfile "$($env:USERPROFILE)\fontstemp\ProggyClean.zip"
 write-host "Successfully Downloaded Compressed Font: Proggy Clean"
     
 write-host "Downloading Compressed Font: Roboto Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/RobotoMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\RobotoMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/RobotoMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\RobotoMono.zip"
 write-host "Successfully Downloaded Compressed Font: Roboto Mono"
     
 write-host "Downloading Compressed Font: Share Tech Mono"
@@ -263,35 +263,35 @@ Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download
 write-host "Successfully Downloaded Compressed Font: Share Tech Mono"
     
 write-host "Downloading Compressed Font: Source Code Pro"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/SourceCodePro.zip -Outfile "$($env:USERPROFILE)\fontstemp\SourceCodePro.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/SourceCodePro.zip -Outfile "$($env:USERPROFILE)\fontstemp\SourceCodePro.zip"
 write-host "Successfully Downloaded Compressed Font: Source Code Pro"
     
 write-host "Downloading Compressed Font: Space Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/SpaceMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\SpaceMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/SpaceMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\SpaceMono.zip"
 write-host "Successfully Downloaded Compressed Font: Space Mono"
     
 write-host "Downloading Compressed Font: Nerd Fonts Symbols Only"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/NerdFontsSymbolsOnly.zip -Outfile "$($env:USERPROFILE)\fontstemp\NerdFontsSymbolsOnly.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/NerdFontsSymbolsOnly.zip -Outfile "$($env:USERPROFILE)\fontstemp\NerdFontsSymbolsOnly.zip"
 write-host "Successfully Downloaded Compressed Font: Nerd Fonts Symbols Only"
     
 write-host "Downloading Compressed Font: Terminus"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Terminus.zip -Outfile "$($env:USERPROFILE)\fontstemp\Terminus.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Terminus.zip -Outfile "$($env:USERPROFILE)\fontstemp\Terminus.zip"
 write-host "Successfully Downloaded Compressed Font: Terminus"
     
 write-host "Downloading Compressed Font: Tinos"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Tinos.zip -Outfile "$($env:USERPROFILE)\fontstemp\Tinos.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Tinos.zip -Outfile "$($env:USERPROFILE)\fontstemp\Tinos.zip"
 write-host "Successfully Downloaded Compressed Font: Tinos"
     
 write-host "Downloading Compressed Font: Ubuntu"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Ubuntu.zip -Outfile "$($env:USERPROFILE)\fontstemp\Ubuntu.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Ubuntu.zip -Outfile "$($env:USERPROFILE)\fontstemp\Ubuntu.zip"
 write-host "Successfully Downloaded Compressed Font: Ubuntu"
     
 write-host "Downloading Compressed Font: Ubuntu Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/UbuntuMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\UbuntuMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/UbuntuMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\UbuntuMono.zip"
 write-host "Successfully Downloaded Compressed Font: Ubuntu Mono"
     
 write-host "Downloading Compressed Font: Victor Mono"
-iwr -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/VictorMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\VictorMono.zip"
+Invoke-WebRequest -uri https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/VictorMono.zip -Outfile "$($env:USERPROFILE)\fontstemp\VictorMono.zip"
 write-host "Successfully Downloaded Compressed Font: Victor Mono"
     
 # Enable Progress Bars
